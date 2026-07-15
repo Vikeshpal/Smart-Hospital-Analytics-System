@@ -73,6 +73,33 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+st.markdown("""
+<style>
+
+/* Sirf toolbar (deploy button, menu) hide karo, poora header nahi
+   - isse sidebar ka collapse/expand arrow hamesha kaam karega */
+[data-testid="stToolbar"] {
+    visibility: hidden;
+}
+
+/* Hide Main Menu */
+#MainMenu{
+    visibility:hidden;
+}
+
+/* Hide Footer */
+footer{
+    visibility:hidden;
+}
+
+/* Remove top padding */
+.block-container{
+    padding-top:4rem;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 
 
 
@@ -88,7 +115,13 @@ st.markdown("""
 }
 
 [data-testid="stSidebar"]{
-    background-color:#0E1117;
+    background-color:#0E1117;           
+}
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] div {
+    color: white !important;
 }
 
 div[data-testid="metric-container"]{
@@ -99,14 +132,21 @@ div[data-testid="metric-container"]{
 }
 
 .big-title{
-    font-size:38px;
-    font-weight:bold;
-    color:#1565C0;
+    font-size:50px;
+    font-weight:800;
+    color:#1976D2;
+    line-height:1.2;
+    margin-bottom:10px;
+    letter-spacing:0.5px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    overflow-x:auto;
 }
 
 .sub-title{
-    font-size:18px;
-    color:#555555;
+    font-size:20px;
+    color:#666666;
+    font-weight:500;
+    margin-bottom:5px;
 }
 
 .footer{
@@ -117,8 +157,6 @@ div[data-testid="metric-container"]{
 
 </style>
 """, unsafe_allow_html=True)
-
-
 
 
 
@@ -145,7 +183,7 @@ menu = st.sidebar.radio(
 
         "🏠 Dashboard",
 
-        "🤖 Disease Prediction",
+        "🤖 Health Prediction",
 
         "📊 Analytics",
 
@@ -312,7 +350,7 @@ Use the navigation menu from the sidebar to access different modules.
     st.markdown("---")
 
     st.markdown(
-        '<p class="footer">Developed by Vikesh Pal | AI & Data Science</p>',
+        '<p class="footer">Developed by Team: Vikesh Pal, Amarjeet Kumar, Shivam Kumar, Chhotan Kumar, Samsujama | AI & Data Science</p>',
         unsafe_allow_html=True
     )
 
@@ -334,7 +372,7 @@ Use the navigation menu from the sidebar to access different modules.
 
 def disease_prediction():
 
-    st.title("🤖 Disease Prediction")
+    st.title("🤖 Health Prediction")
 
     st.markdown("---")
 
@@ -791,10 +829,18 @@ This project is developed for educational purposes and should not be considered 
 
     st.markdown("---")
 
-    st.subheader("👨‍💻 Developer")
+    st.subheader("👨‍💻 Team Members")
 
     st.info("""
-Name : Vikesh Pal
+1. Vikesh Pal
+
+2. Amarjeet Kumar
+
+3. Shivam Kumar
+
+4. Chhotan Kumar
+
+5. Samsujama
 
 Course : B.Tech (Artificial Intelligence & Data Science)
 
@@ -811,7 +857,7 @@ if menu == "🏠 Dashboard":
 
     dashboard()
 
-elif menu == "🤖 Disease Prediction":
+elif menu == "🤖 Health Prediction":
 
     disease_prediction()
 
@@ -826,33 +872,3 @@ elif menu == "📄 Reports":
 elif menu == "ℹ About":
 
     about()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

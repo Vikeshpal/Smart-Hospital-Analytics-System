@@ -91,9 +91,9 @@ streamlit run app.py
 
 ![Dashboard](assets/dashboard.png)
 
-## Disease Prediction
+## Health Prediction
 
-![Prediction](assets/prediction.png)
+![Health Prediction](assets/prediction.png)
 
 ## Analytics
 
@@ -142,9 +142,13 @@ Output
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Team Members
 
 **Vikesh Pal**
+**Amarjeet Kumar**
+**Shivam Kumar**
+**Chhotan Kumar**
+**Samsujama**
 
 B.Tech – Artificial Intelligence & Data Science
 
