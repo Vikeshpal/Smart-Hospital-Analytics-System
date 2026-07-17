@@ -148,7 +148,6 @@ Output
 **Amarjeet Kumar**
 **Shivam Kumar**
 **Chhotan Kumar**
-**Samsujama**
 
 B.Tech – Artificial Intelligence & Data Science
 

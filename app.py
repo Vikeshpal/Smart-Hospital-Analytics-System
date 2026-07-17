@@ -350,7 +350,7 @@ Use the navigation menu from the sidebar to access different modules.
     st.markdown("---")
 
     st.markdown(
-        '<p class="footer">Developed by Team: Vikesh Pal, Amarjeet Kumar, Shivam Kumar, Chhotan Kumar, Samsujama | AI & Data Science</p>',
+        '<p class="footer">Developed by Team: Vikesh Pal, Amarjeet Kumar, Shivam Kumar, Chhotan Kumar | AI & Data Science</p>',
         unsafe_allow_html=True
     )
 
@@ -363,12 +363,6 @@ Use the navigation menu from the sidebar to access different modules.
     st.success("📊 Analytics Module Ready")
 
     st.success("📄 Report Module Ready")
-
-
-
-
-
-
 
 def disease_prediction():
 
@@ -839,8 +833,6 @@ This project is developed for educational purposes and should not be considered 
 3. Shivam Kumar
 
 4. Chhotan Kumar
-
-5. Samsujama
 
 Course : B.Tech (Artificial Intelligence & Data Science)
 
